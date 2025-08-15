@@ -1,31 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Tailwind Project</title>
-    <link href="./src/output.css" rel="stylesheet">
-</head>
-<body class="bg-[#27292F]">
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./src/images/favicon.png" />
+  </head>
+  <body class="bg-[#27292F]">
     <!-- ============ Navbar Start ================== -->
-     <header>
-        <nav class="bg-[#27292F] shadow-xl">
-            <div class="container mx-auto">
-                <div class="sm:flex justify-between items-center py-5">
-                    <div class="text-center mb-3">
-                        <a href="#" class="text-white text-xl font-bold sm:text-3xl text-center"><span class="text-[#F65023]">S</span>mart Cod<span class="text-[#F65023]">ers</span></a>
-                    </div>
-                    <ul class="sm:flex text-xl mt-5 text-white text-center border-t sm:border-none ">
-                        <li class="mt-5 sm:mt-0"><a href="#" class="p-3 text-[#F65023]">Home</a></li>
-                        <li><a href="#" class="p-3 hover:text-[#F65023]">Products</a></li>
-                        <li><a href="#" class="p-3 hover:text-[#F65023]">Blog</a></li>
-                        <li><a href="#" class="p-3 hover:text-[#F65023]">Portfolio</a></li>
-                        <li><a href="#" class="p-3 hover:text-[#F65023]">Contact</a></li>
-                    </ul>
-                </div>
+    <header>
+      <nav class="bg-[#27292F] shadow-xl">
+        <div class="container mx-auto">
+          <div class="sm:flex justify-between items-center py-5">
+            <div class="text-center mb-3">
+              <a
+                href="#"
+                class="text-white text-xl font-bold sm:text-3xl text-center"
+                ><span class="text-[#F65023]">S</span>mart Cod<span
+                  class="text-[#F65023]"
+                  >ers</span
+                ></a
+              >
             </div>
-        </nav>
-     </header>
+            <ul
+              class="sm:flex text-xl mt-5 text-white text-center border-t sm:border-none"
+            >
+              <li class="mt-5 sm:mt-0">
+                <a href="#" class="p-3 text-[#F65023]">Home</a>
+              </li>
+              <li><a href="#" class="p-3 hover:text-[#F65023]">Products</a></li>
+              <li><a href="#" class="p-3 hover:text-[#F65023]">Blog</a></li>
+              <li>
+                <a href="#" class="p-3 hover:text-[#F65023]">Portfolio</a>
+              </li>
+              <li><a href="#" class="p-3 hover:text-[#F65023]">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- ============= Navbar End ================== -->
-</body>
+    <!-- ============ Hero Part Start ====================== -->
+    <section>
+      <div
+        class="container mx-auto text-white border border-indigo-600 border-t-0 sm:flex justify-around items-center text-center h-[80vh] px-10 pt-10 pb-15"
+      >
+        <div>
+          <h1 class="text-2xl sm:text-5xl mb-5 sm:mb-15">
+            Smart Coders: Learn <br />
+            Programming
+          </h1>
+          <button
+            class="bg-indigo-900 px-7 py-3 rounded-full text-xl shadow-xl hover:bg-indigo-950"
+          >
+            Join: Programming Shikbo's Team
+            <svg
+              class="inline-block w-7 text-red-500 ml-2 animate-ping"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <img class="animate-pulse" src="./src/images/hero-img.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- ============= Hero Part End ====================== -->
+  </body>
 </html>
